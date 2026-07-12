@@ -5,10 +5,19 @@ int main(int argc, char *argv[]) { //T.P N°3 by Axel ELiel ELio Llampa, legajo 
 	float pes;
 	float imc;
 	printf("Indice de Masa corporal \n");
+	do{
 	printf("ingrese su altura en metros: \n");
 	scanf(" %f", &alt);
+	if(alt <= 0){
+	printf("numero invalido \n");}
+	}
+	while(alt <= 0);
+	do{
 	printf("ingrese su peso en Kg: \n");
 	scanf(" %f", &pes);
+	if(pes <= 0){
+	printf("numero invalido\n");}}
+	while( pes <= 0); 
 	imc = pes / (alt*alt);
 	printf("su indice de masa corporal es: %.2f \n", imc); //primer cambio del codigo
 		printf("\tIndice\t\tCondicion\n");
